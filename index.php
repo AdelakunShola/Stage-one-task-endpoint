@@ -31,5 +31,5 @@ header('Content-Type: application/json');
 
 // Return the response JSON with a status code of 200 (Success)
 http_response_code(200);
-echo json_encode($responseData, JSON_PRETTY_PRINT); // Use JSON_PRETTY_PRINT for formatting
+echo json_encode($responseData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); // Use JSON_PRETTY_PRINT for formatting
 ?>
