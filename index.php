@@ -6,23 +6,24 @@ $track = $_GET['track'];
 // Get current day of the week
 $currentDay = date('l');
 
-// Get current UTC time with validation of +/-2 hours
-$utcTime = gmdate('Y-m-d H:i:s');
+// Get current UTC time with validation of +/-2 minutes
+$utcTime = gmdate('Y-m-d\TH:i:s\Z');
 
-// GitHub URL of the file being run
+// GitHub URL of the file being run (link to your PHP script)
 $githubFileURL = 'https://github.com/AdelakunShola/Stage-one-task-endpoint/endpoint.php';
 
-// GitHub URL of the full source code
+// GitHub Repo URL (link to the main repository page)
 $githubSourceURL = 'https://github.com/AdelakunShola/Stage-one-task-endpoint';
 
-// Prepare the response data
+// Prepare the response data in the specified JSON format
 $responseData = array(
-    "Slack name" => $slackName,
-    "Current day of the week" => $currentDay,
-    "Current UTC time" => $utcTime,
-    "Track" => $track,
-    "GitHub URL of the file being run" => $githubFileURL,
-    "GitHub URL of the full source code" => $githubSourceURL
+    "slack_name" => $slackName,
+    "current_day" => $currentDay,
+    "utc_time" => $utcTime,
+    "track" => $track,
+    "github_file_url" => $githubFileURL,
+    "github_repo_url" => $githubSourceURL,
+    "status_code" => 200
 );
 
 // Set the response content type to JSON
