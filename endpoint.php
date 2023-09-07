@@ -1,7 +1,7 @@
 <?php
 // Get query parameters from the GET request
-$slackName = $_GET['Shola'];
-$track = $_GET['Backend'];
+$slackName = $_GET['slack_name'];
+$track = $_GET['track'];
 
 // Get current day of the week
 $currentDay = date('l');
