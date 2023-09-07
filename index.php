@@ -10,7 +10,7 @@ $currentDay = date('l');
 $utcTime = gmdate('Y-m-d\TH:i:s\Z');
 
 // GitHub URL of the file being run (link to your PHP script)
-$githubFileURL = 'https://github.com/AdelakunShola/Stage-one-task-endpoint/endpoint.php';
+$githubFileURL = 'https://github.com/AdelakunShola/Stage-one-task-endpoint/index.php';
 
 // GitHub Repo URL (link to the main repository page)
 $githubSourceURL = 'https://github.com/AdelakunShola/Stage-one-task-endpoint';
